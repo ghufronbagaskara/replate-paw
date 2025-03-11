@@ -1,0 +1,252 @@
+@import url('fonts.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f0de;
+    color: #333;
+}
+
+/* Header Styles */
+.header {
+    background-color: #875b48;
+    padding: 15px 30px;
+}
+
+.logo {
+    height: 30px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.logo-text {
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: #bf6750;
+    color: white;
+    padding: 60px 40px;
+    min-height: 600px;
+    background-image: url('wave-pattern.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Login Card Styles */
+.login-card {
+    background-color: #fff5e1;
+    border-radius: 15px;
+    padding: 30px;
+    width: 320px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.login-card h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.login-form .form-field {
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f0ad60;
+    color: #333;
+    font-size: 1rem;
+}
+
+.login-form input::placeholder {
+    color: #875b48;
+    opacity: 0.8;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    color: #0099cc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #875b48;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.register-link a {
+    color: #0099cc;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f5f0de;
+    padding: 60px 40px;
+}
+
+.testimonials-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.testimonials-header h2 {
+    font-size: 2.5rem;
+    color: #333;
+    position: relative;
+}
+
+/* .testimonials-header h2::after {
+    content: "";
+    position: absolute;
+    right: 30%;
+    bottom: 0;
+    width: 100px;
+    height: 8px;
+    background-color: #f0ad60;
+    border-radius: 4px;
+} */
+
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.testimonial-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 350px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-card.orange {
+    background-color: #f0ad60;
+}
+
+.quote-icon {
+    font-size: 3rem;
+    color: #875b48;
+    margin-bottom: 10px;
+    height: 50px;
+    position: relative;
+}
+
+.quote-icon::before {
+    content: "❝";
+    font-size: 3rem;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    color: #875b48;
+}
+
+.testimonial-content p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.author-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.author-info h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.author-info p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 960px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-text {
+        margin-bottom: 40px;
+    }
+    
+    .testimonials-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
