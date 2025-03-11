@@ -12,7 +12,7 @@ body {
     color: #333;
 }
 
-/* Header Styles */
+/* header */
 .header {
     background-color: #875b48;
     padding: 15px 30px;
@@ -35,7 +35,7 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-/* Hero Section Styles */
+/* main section */
 .hero {
     background-color: #bf6750;
     color: white;
@@ -139,7 +139,7 @@ body {
     margin-left: 5px;
 }
 
-/* Testimonials Section */
+/* testi section */
 .testimonials {
     background-color: #f5f0de;
     padding: 60px 40px;
@@ -155,17 +155,6 @@ body {
     color: #333;
     position: relative;
 }
-
-/* .testimonials-header h2::after {
-    content: "";
-    position: absolute;
-    right: 30%;
-    bottom: 0;
-    width: 100px;
-    height: 8px;
-    background-color: #f0ad60;
-    border-radius: 4px;
-} */
 
 .testimonials-container {
     display: flex;
@@ -234,7 +223,7 @@ body {
     color: #666;
 }
 
-/* Responsive Styles */
+/* responsive design */
 @media (max-width: 960px) {
     .hero-content {
         flex-direction: column;
