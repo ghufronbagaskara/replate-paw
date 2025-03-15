@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Inter, sans-serif;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 
 /* header */
 .header {
-    background-color: #875b48;
+    background-color: #a08568;
     padding: 15px 30px;
 }
 
@@ -37,22 +37,28 @@ body {
 
 /* main section */
 .hero {
-    background-color: #bf6750;
-    color: white;
-    padding: 60px 40px;
-    min-height: 600px;
-    background-image: url('wave-pattern.png');
-    background-size: cover;
-    background-position: center;
     position: relative;
+    background-color: #bf5a3c;
+    color: white;
+    padding: 40px 40px 100px 100px; 
+    min-height: 600px;
+    z-index: 1;
+
+    background-image: url('../assets/images/bacground-elem-login.svg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero-content {
-    display: flex;
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 40px; 
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 
 .hero-text {
@@ -65,6 +71,11 @@ body {
     margin-bottom: 20px;
 }
 
+.brand-name {
+    font-family: Poppins, sans-serif;
+    font-weight: 400; 
+}
+
 .hero-text p {
     font-size: 1.1rem;
     line-height: 1.6;
@@ -72,15 +83,16 @@ body {
 
 /* Login Card Styles */
 .login-card {
-    background-color: #fff5e1;
+    background-color: #f9f1dc;
     border-radius: 15px;
     padding: 30px;
-    width: 320px;
+    width: 370px;
+    font: 'Poppins', sans-serif;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .login-card h2 {
-    color: #333;
+    color: #202244;
     text-align: center;
     margin-bottom: 20px;
     font-size: 1.8rem;
@@ -95,23 +107,24 @@ body {
     padding: 15px;
     border-radius: 8px;
     border: none;
-    background-color: #f0ad60;
+    background-color: #e39b53;
     color: #333;
     font-size: 1rem;
 }
 
 .login-form input::placeholder {
-    color: #875b48;
+    color: white;
     opacity: 0.8;
 }
 
 .forgot-password {
     display: block;
     text-align: right;
-    color: #0099cc;
+    color: #18a0fb;
     text-decoration: none;
     font-size: 0.9rem;
-    margin-top: 5px;
+    margin-top: 30px;
+    margin-bottom: 64px;
 }
 
 .login-button {
@@ -119,7 +132,7 @@ body {
     padding: 15px;
     border-radius: 8px;
     border: none;
-    background-color: #875b48;
+    background-color: #854a2c;
     color: white;
     font-size: 1rem;
     cursor: pointer;
@@ -129,15 +142,18 @@ body {
 .register-link {
     text-align: center;
     margin-top: 20px;
-    font-size: 0.9rem;
+    margin-bottom: 50px;
+    font-size: 13px;
+    color: black;
 }
 
 .register-link a {
-    color: #0099cc;
+    color: #18a0fb;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 200;
     margin-left: 5px;
 }
+
 
 /* testi section */
 .testimonials {
